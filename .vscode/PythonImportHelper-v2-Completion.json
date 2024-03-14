@@ -186,7 +186,7 @@
         "kind": 6,
         "importPath": "main.models",
         "description": "main.models",
-        "peekOfCode": "class Student(models.Model):\n    name = models.CharField(max_length=254)\n    telephone = models.CharField(null = True,blank=True,max_length=15)\n    email = models.EmailField()\n    date_of_birth = models.DateField()\n    #description = models.TextField()\n    #updated_at = models.DateTimeField(auto_now=True)\n    #user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)\n    def __str__(self):\n        return self.name",
+        "peekOfCode": "class Student(models.Model):\n    name = models.CharField(max_length=254)\n    telephone = models.CharField(null = True,blank=True,max_length=15)\n    email = models.EmailField()\n    date_of_birth = models.DateField()\n    description = models.TextField()\n    updated_at = models.DateTimeField(auto_now=True)\n    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)\n    def __str__(self):\n        return self.name",
         "detail": "main.models",
         "documentation": {}
     },

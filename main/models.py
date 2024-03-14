@@ -7,9 +7,9 @@ class Student(models.Model):
     telephone = models.CharField(null = True,blank=True,max_length=15)
     email = models.EmailField()
     date_of_birth = models.DateField()
-    #description = models.TextField()
-    #updated_at = models.DateTimeField(auto_now=True)
-    #user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    description = models.TextField()
+    updated_at = models.DateTimeField(auto_now=True)
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     
     def __str__(self):
         return self.name
